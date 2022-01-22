@@ -2,5 +2,5 @@
       
 echo "Hi there!" 
       
-exit 0 
+exit 22
      
