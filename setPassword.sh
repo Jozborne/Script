@@ -5,7 +5,7 @@
 #Modification date 24 January 2022
 #Purpose of script is to hash a password in a folder to a .txt document.
 
-#Lets the User enter the name of the folder
+#Lets the User enter the name of the folder in this instance folder name was John
 
 read -p "Name of folder you wish to create : " folderName
 
