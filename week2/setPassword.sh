@@ -17,7 +17,7 @@ echo "Enter Password"
 
 read -sp 'password : ' pass_var
 
-#Creates the folder name in the week2 folder tree
+#Creates the folder name in the week2 folder tree in this example John was used.
 
 mkdir ~/john/scripts/portfolio/week2/"$folderName"
 
