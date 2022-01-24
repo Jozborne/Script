@@ -20,7 +20,7 @@ mkdir ~/john/scripts/portfolio/week2/"$folderName"
 
 touch ~/john/scripts/portfolio/week2/"$folderName"/secret.txt
 
-#Displays the $pass_var as enter previously in the created file tree and secret.txt document
+#Displays the $pass_var as entered previously however this is now hashed in the created file to secret.txt document
 
 echo $pass_var | sha256sum > ~/john/scripts/portfolio/week2/"$folderName"/secret.txt
 
