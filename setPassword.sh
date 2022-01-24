@@ -1,5 +1,10 @@
 #! /bin/bash
 
+#Created by John Osborne
+#Creation 23 January 2022
+#Modification date 24 January 2022
+#Purpose of script is to hash a password in a folder to a .txt document.
+
 #Lets the User enter the name of the folder
 
 read -p "Name of folder you wish to create : " folderName
