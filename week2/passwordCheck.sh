@@ -16,7 +16,7 @@ var_hash=$(echo $pass_var | sha256sum)
 
 #Created a myvariable command which displays the hash that was created with the cat command
 
-myvariable=$(cat "/home/kali/john/scripts/portfolio/week2/secret.txt")
+myvariable=$(cat "/home/kali/john/scripts/portfolio/week2/John/secret.txt")
 
 #Displays the  var_hash which is changed by what the user inputs.
 
