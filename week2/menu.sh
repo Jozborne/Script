@@ -1,6 +1,8 @@
 #! /bin/bash
 #Created by John Osborne
 #Creation 24 January 2022
+#Modified 25 January 2022
+#Created to allow user to create or copy a folder or Set a password base off their respective inputs. 
 
 
 #Runs the password check script
@@ -16,7 +18,7 @@ if [ $? == 0 ]; then
     echo "3. Set a password"$3
 
 
-#If $? does not equal zero the exit 2 
+#If $? does not equal zero then exit 2 
 
 else
 exit 2
