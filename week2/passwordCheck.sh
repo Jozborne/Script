@@ -31,9 +31,11 @@ if [ "$var_hash" = "$myvariable" ]; then
 #If the $var_hash and $myvariable are not equal Access is Denied
 else
     echo "Access Denied"
+
+    exit 1
 # Ends If statement 
 fi
 #Exits script 
-    exit 1
+
 
 
