@@ -1,7 +1,7 @@
 #! /bin/bash
 #Created by John Osborne
 #Creation 30 January 2022
-#Modified 31 January 2022
+#Modified 03 Febuary 2022
 #Created to allow user to create or copy a folder or Set a password base off their respective inputs. 
 
 
@@ -13,15 +13,14 @@
 
 # [ $? == 0 ]; (Ouki, 2018)
 if [ $? == 0 ]; then
-
-    echo "1. Create a folder"
-    echo "2. Copy a folder"$2
-    echo "3. Set a password"$3
-    echo "4. Calculator"$4
-    echo "5. Create week folders"$5
-    echo "6. Check file names"$6
-    echo "7. Download a file"$7
-    echo "This list will keep repeating with the same numbers as options until exit is entered"
+#added in colours 
+    echo -e "\033[34m1. Create a Folder :\033[0m"$1
+    echo -e "\033[34m2. Copy a Folder :\033[0m"$2
+    echo -e "\033[34m3. Set a Password :\033[0m"$3
+    echo -e "\033[34m4. Calculator :\033[0m"$4
+    echo -e "\033[34m5. Create week folders :\033[0m"$5
+    echo -e "\033[34m6. Check File names :\033[0m"
+    echo -e "\033[34m7. Download a file:\033[0m"$7
    
 
 #If $? does not equal zero then exit 2 
@@ -35,7 +34,7 @@ fi
 
 # Produces "select an option on users terminal"
 
-echo -n "Select an option :"
+ echo -e "\033[32mSelect an option :\033[0m "
 
 #Allows input of a number
 
@@ -114,20 +113,21 @@ case $Number in
                                         ;;
         #Ends the Case statement
                                         esac
-#Continues the loop
-    echo "1. Create a folder"$1
-    echo "2. Copy a folder"$2
-    echo "3. Set a password"$3
-    echo "4. Calculator"$4
-    echo "5. Create week folders"$5
-    echo "6. Check file names"$6
-    echo "7. Download a file"$7
-    echo "This list will keep repeating with the same numbers as options until exit is entered"
-#Farewell echo 
-$8 echo -n "Thankyou for using this script" 
-                                        fi
+#Continues the loop in a different colour
+    echo -e " \033[33m1. Create a Folder :\033[0m"$1
+    echo -e " \033[33m2. Copy a Folder :\033[0m"$2
+    echo -e " \033[33m3. Set a Password :\033[0m"$3
+    echo -e " \033[33m4. Calculator :\033[0m"$4
+    echo -e " \033[33m5. Create week folders :\033[0m"$5
+    echo -e " \033[33m6. Check File names :\033[0m"
+    echo -e " \033[33m7. Download a file:\033[0m"$7
+    #Warning in red about the exit commands 
+    echo -e "\033[31mThis list will keep repeating with the same numbers as options until exit is entered:\033[0m"$8
+
+
+fi
                                         
-                                        done
+done
 # Format for Case statement (Linuxize, 2022)
 
 
