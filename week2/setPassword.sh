@@ -1,9 +1,10 @@
 #! /bin/bash
 
 #Created by John Osborne
-#Creation 23 January 2022
+#Created 23 January 2022
 #Modification date 24 January 2022
 #Purpose of script is to hash a password in a folder to a .txt document.
+#Rani, B. (2021, 19 February 2021). touch command in Linux with Examples. Retrieved 23 January from https://www.geeksforgeeks.org/touch-command-in-linux-with-examples
 
 #Lets the User enter the name of the folder
 
@@ -31,4 +32,3 @@ echo $pass_var | sha256sum > ~/john/scripts/portfolio/week2/"$folderName"/secret
 
 exit 0
 
-#Rani, B. (2021, 19 February 2021). touch command in Linux with Examples. Retrieved 23 January from https://www.geeksforgeeks.org/touch-command-in-linux-with-examples

@@ -1,6 +1,7 @@
 #! /bin/bash
 #Created by John Osborne
-#Creation 24 January 2022
+#Created 24 January 2022
+#Modified on the 6 February 2022
 #Purpose of script is to check hashed password and grant or deny access
 
 

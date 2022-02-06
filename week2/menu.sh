@@ -1,9 +1,10 @@
 #! /bin/bash
 #Created by John Osborne
 #Creation 24 January 2022
-#Modified 25 January 2022
+#Modified 6 February
 #Created to allow user to create or copy a folder or Set a password base off their respective inputs. 
-
+#Ouki. (2018). How to conditionally do something if a command succeeded or failed. Retrieved 24 January 2022 from https://unix.stackexchange.com/questions/22726/how-to-conditionally-do-something-if-a-command-succeeded-or-failed
+#Linuxize. (2022, 22 November 2019). Bash Case Statement. Retrieved 25 January from https://linuxize.com/post/bash-case-statement/
 
 #Runs the password check script
 /home/kali/john/scripts/portfolio/week2/passwordCheck.sh 
@@ -76,5 +77,3 @@ $5 echo -n "Thankyou for using this script"
 
 exit 2
 
-#Ouki. (2018). How to conditionally do something if a command succeeded or failed. Retrieved 24 January 2022 from https://unix.stackexchange.com/questions/22726/how-to-conditionally-do-something-if-a-command-succeeded-or-failed
-#Linuxize. (2022, 22 November 2019). Bash Case Statement. Retrieved 25 January from https://linuxize.com/post/bash-case-statement/
