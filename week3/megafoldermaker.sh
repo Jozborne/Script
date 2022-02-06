@@ -1,6 +1,4 @@
 #!/bin/bash
-
-#If there aren't two arguments to the script
 #Created by ECU
 #Edited by John Osborne
 #Creation 30 January 2022
@@ -9,7 +7,6 @@
 
 #Allows input of a number
 
-#Start of loop using with exit to quit 
 echo "Please enter two numbers"
 
 read num1
@@ -33,7 +30,4 @@ do
     mkdir ~/john/scripts/portfolio/"week $i"
 
 done
-    
-
-
 
