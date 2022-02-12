@@ -1,7 +1,7 @@
 #!/bin/bash
 #Created by John Osborne
 #Created on the 5th of February 2022
-#Modified on the 7 February 2022
+#Modified on the 12 February 2022
 #Created to be guess a number using the printError 
 
 
@@ -71,7 +71,7 @@ read -p "$1: "
       read -p "$1: "
 
     if [[ $REPLY -eq $NUM4  ]]; then
-    echo "Correct!"
+    echo "Right!"
     fi
     done
 
