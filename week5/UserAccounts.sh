@@ -13,7 +13,6 @@ print "|___________________|________|_________|___________________________|_____
 {printf("| \033[33m%-17s\033[0m | \033[35m%-6s\033[0m | \033[35m%-7s\033[0m | \033[35m%-25s\033[0m | \033[33m%-18s\033[0m |\n", $1, $3, $4, $6, $7);
 }' /etc/passwd > $user
 #Search the output with grep to locate the user with "./bin/bash" output is diplayed once the script is run.
-grep -r "./bin/bash" $user 
-
+grep -r 'bash' $user
 #exit script
 exit 0
