@@ -1,8 +1,8 @@
 #!/bin/bash
 #Created by John Osborne
-#Created on the 12th of February 2022
-#Modified on the 20th of February 2022
-#Script to gather information off a webpage and parse it and present some Cyber tips and Cyber Facts
+#Created on 12 February 2022
+#Modified on 20 February 2022
+#Script to gather information of a webpage and parse it and present some Cyber tips and Cyber Facts
 
 #Password Protected
 ./passwordCheck.sh
@@ -12,10 +12,10 @@
 if [ $? == 0 ]; then
 #Variables are listed
 
-bye=$"Thank you for using this script"
+bye=$"Thank you for using this script."
 curl=$(which curl)
 outfile="Assignment"
-#Chosen website can be editted if analysis of other website is required.
+#Chosen website can be edited if analysis of other websites is required.
 url="https://us.norton.com/internetsecurity-emerging-threats-cyberthreat-trends-cybersecurity-threat-review.html"
 
 #Curl scrapes the html webpage with out displaying any data on the terminal
@@ -26,7 +26,7 @@ function curl_webpage () {
 
 #Grep is used to search for "TIP" which is the key identifier on the text to present the information
 #Sed is used to strip the html portion it is then copied from delete.txt to the outfile
-#rm is used to delete the text post it's purpose being fullfilled.
+#rm is used to delete the text after its purpose being fullfilled.
 #(tech, 2019)
 function strip_html () {
     grep "TIP" Assignment | sed 's/<[^>]*>//g' > delete.txt && cp delete.txt $outfile
@@ -54,9 +54,9 @@ math
 strip_html
 echo -e "\033[31mNumber of times security is mentioned post stripping the data:\033[0m"
 math
-echo "Highlights how effective parsing can ensure specific accurate search results"
+echo "Highlights how effective parsing can ensure specific, accurate search results."
 #Organising the downloaded information neatly and in colour
-#Colours can be changed depending on users preference
+#Colours can be changed depending on the users preference
 
 
 awk -F":" '
@@ -69,7 +69,7 @@ print "                                           "
 
 #(Emrys, 2008)
 #This case statement allows a loop to be created to prevent incorrect inputs being accepted.
-#If inocorrect inputs entered script loops back and requests another correct input be used
+#If incorrect inputs entered script loops back and requests another correct input be used
 while true; do
     read -p "Do you wish to Learn more about Cyber Facts? Enter y to continue or n to exit :" yn
     case $yn in
@@ -110,4 +110,3 @@ fi
 #Hocevar, S. (2011, 9 April 2011). How do I count the number of occurrences of a word in a text file with the command line? Retrieved 19 February from https://unix.stackexchange.com/questions/2244/how-do-i-count-the-number-of-occurrences-of-a-word-in-a-text-file-with-the-comma
 #Ouki. (2018). How to conditionally do something if a command succeeded or failed. Retrieved 24 January 2022 from https://unix.stackexchange.com/questions/22726/how-to-conditionally-do-something-if-a-command-succeeded-or-failed
 #tech, r. (2019). How to Scrape a Web Page Using Bash Script, Youtube. https://www.youtube.com/watch?v=DZ0WKRmUTm4
-
