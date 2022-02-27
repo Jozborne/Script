@@ -1,7 +1,9 @@
 #! /bin/bash
-#Created by ECU
+#Created by John Osborne
 #Creation 24 January 2022
+#Modified 27th February 2022
 #Created to allow user to copy a folder.
+
 read -p "type the name of the folder you would like to copy: " folderName
 
 #if the name is a valid directory

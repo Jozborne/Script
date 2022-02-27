@@ -1,4 +1,8 @@
 #!/bin/bash
+#Created by John Osborne    
+#Created on the 24 January 2022
+#Modified on the 27th February 2022
+#Purpose fixing errors 
 
 secret='shhh' #Don't tell anyone!
 
