@@ -1,6 +1,8 @@
 #!/bin/bash
-#Created by ECU
+#Created by John Osborne
 #Created on the 8th of February
+#Modified on the 27th of February
+#Purpose to nearly display information from Input.txt
 
 echo "Password"
 
@@ -23,4 +25,4 @@ END {
 
     print("________________________________");
 
-}' input.txt
+}' Input.txt

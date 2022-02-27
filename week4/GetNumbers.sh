@@ -1,8 +1,9 @@
 #!/bin/bash
-#Created by ECU
-#Modified on the 6 February 2022
+#Created by John Osborne
+#Modified on the 27th February 2022
 #Created to be a test printError functions 
 
+#Purpose to test print error function 
 
 #This allows the concept of print error to produce the desired outcomes 
 

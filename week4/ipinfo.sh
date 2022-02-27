@@ -1,7 +1,7 @@
 #!/bin/bash
-#Created by ECU
+#Created by John Osborne
 #Creation 04 Febuary 2022
-#Modified 04 Febuary 2022
+#Modified 27 Febuary 2022
 #Created to highlight the sed command 
       
 #get info about networking from the ifconfig command 
