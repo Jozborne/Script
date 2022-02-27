@@ -8,13 +8,17 @@
 
 #Installed BC for calculations
 
-#Display what is required from the user
+# !/bin/bash
+
+#Installed BC for calculations
+
+# Display what is required from the user
 echo "Enter numbers for calculations"
 
 #User inputs two numbers
 read a
 read b
- 
+
 # Choose which function you require
 echo "Which calculator option do you require?"
 echo "1. Add"
@@ -27,29 +31,38 @@ read choice
 
 
 #Case statement chosen with $choice as the variable
-
-#(Agrawal, 2021)
 case $choice in
+
+
+
+#Expressions entered
 
 
 1)answer1=`echo $a + $b | bc`
 
-     echo "Result: \033[34m""${answer1}""\e[0m"
+     echo -e "Result: \033[34m"${answer1}"\e[0m"
 ;;
-      2)answer2=`echo $a - $b | bc`
-     
-      echo "Result: \033[31m""${answer2}""\e[0m"
+    2)answer2=`echo $a - $b | bc`
+
+     echo -e  "Result: \033[31m"${answer2}"\e[0m"
 
      ;;
 
           3)answer3=`echo $a \* $b | bc`
 
-          echo "Result: \033[34m""${answer3}""\e[0m"
-               ;;
+          echo -e "Result: \033[34m"${answer3}"\e[0m"
+    ;;
 
                 4)answer4=`echo $a / $b | bc`
 
-          echo "Result: \033[35m""${answer4}""\e[0m"
-                        ;;
-    
+          echo -e "Result: \033[35m"${answer4}"\e[0m"
+    ;;
+    "")
+
+
+
+ #End case statement
 esac
+
+
+#Agrawal, P. (2021, 15 July 2021). Simple Calculator in Bash. Retrieved 26 January from https://www.geeksforgeeks.org/simple-calculator-bash/

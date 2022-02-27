@@ -1,10 +1,9 @@
 #! /bin/bash
 #Created by John Osborne
 #Creation 30 January 2022
-#Modified 06 February 2022
+#Modified 27th February 2022
 #Created to allow user to create or copy a folder or Set a password base off their respective inputs. 
-#Ouki. (2018). How to conditionally do something if a command succeeded or failed. Retrieved 24 January 2022 from https://unix.stackexchange.com/questions/22726/how-to-conditionally-do-something-if-a-command-succeeded-or-failed
-#Linuxize. (2022, 22 November 2019). Bash Case Statement. Retrieved 25 January from https://linuxize.com/post/bash-case-statement/
+
 
 
 #Runs the password check script
@@ -20,7 +19,7 @@ if [ $? == 0 ]; then
     echo -e "\033[34m3. Set a Password :\033[0m"$3
     echo -e "\033[34m4. Calculator :\033[0m"$4
     echo -e "\033[34m5. Create week folders :\033[0m"$5
-    echo -e "\033[34m6. Check File names :\033[0m"
+    echo -e "\033[34m6. Check File names :\033[0m"$6
     echo -e "\033[34m7. Download a file:\033[0m"$7
    
 
@@ -114,6 +113,8 @@ case $Number in
                                         ;;
         #Ends the Case statement
                                         esac
+
+                                        
 #Continues the loop in a different colour
     echo -e " \033[33m1. Create a Folder :\033[0m"$1
     echo -e " \033[33m2. Copy a Folder :\033[0m"$2
@@ -137,6 +138,7 @@ exit 2
 
 
 
-
+#Ouki. (2018). How to conditionally do something if a command succeeded or failed. Retrieved 24 January 2022 from https://unix.stackexchange.com/questions/22726/how-to-conditionally-do-something-if-a-command-succeeded-or-failed
+#Linuxize. (2022, 22 November 2019). Bash Case Statement. Retrieved 25 January from https://linuxize.com/post/bash-case-statement/
 
 

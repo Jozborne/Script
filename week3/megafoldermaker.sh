@@ -1,8 +1,7 @@
 #!/bin/bash
-#Created by ECU
-#Edited by John Osborne
+#Created by John Osborne
 #Creation 30 January 2022
-#Modified 31 January 2022
+#Modified 27 February 2022
 #Created to allow user to create or copy a folder or Set a password base off their respective inputs. 
 
 #Allows input of a number

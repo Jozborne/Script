@@ -1,7 +1,7 @@
 #! /bin/bash
 #Created by John Osborne
 #Creation 30 January 2022
-#Modified 6 February 2022s
+#Modified 27 February 2022s
 #Created to allow user to download webpages.
 #Geeks, G. f. (2021, 08/09/2021). Wget command in Linux/Unix. Retrieved 30 January from https://www.geeksforgeeks.org/wget-command-in-linux-unix/#:~:text=Wget%20is%20the%20non%2Dinteractive,without%20hindering%20the%20current%20process.
 
@@ -27,10 +27,6 @@ wget "$webaddress"
 
 #(Geeks)
 #Allows command to be exited on enter of exit
-
-
-
-
 
 
 done
